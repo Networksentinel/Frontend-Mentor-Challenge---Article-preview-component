@@ -1,5 +1,3 @@
-console.log("vite.config.js is loaded!");
-
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite'
 
