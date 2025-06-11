@@ -21,6 +21,13 @@
   line-height: 1.4;
   letter-spacing: 0.002em;
 }
+.text-preset-2Bold {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.4;
+  letter-spacing: 0.002em;
+}
 .text-preset-3 {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
