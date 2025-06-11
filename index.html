@@ -19,7 +19,7 @@
         min-h-screen">
     
     <main class="
-          bg-white 
+          bg-white relative
           flex flex-col items-center 
           max-w-[20.4375rem] max-h-[33.625rem]
           rounded-[0.625rem] overflow-hidden">
@@ -58,16 +58,27 @@
                     datetime="">28 Jun 2020</time>
             </div>
           </div>
-          <button class="bg-gray-200 w-8 h-8 rounded-full
+          <button class="bg-gray-200 w-8 h-8 rounded-full 
                     flex items-center justify-center">
             <img class="w-[0.9375rem] h-[0.8125rem]" src="/images/icon-share.svg" alt="Share icon">
           </button>
           
-          <div class="hidden">
-            <span>Share</span>
-            <img src="/images/icon-facebook.svg" alt="Facebook logo">
-            <img src="/images/icon-twitter.svg" alt="Twitter logo">
-            <img src="/images/icon-pinterest.svg" alt="Pinterest logo">
+          <div class="bg-gray-900 flex justify-center absolute inset-x-0">
+            <div class="flex justify-between gap-16">
+              <div class="flex items-center justify-between gap-6">
+                <span>Share</span>
+                <div class="flex justify-between gap-4">
+                  <img class="w-5 h-5" src="/images/icon-facebook.svg" alt="Facebook logo">
+                  <img class="w-5 h-5" src="/images/icon-twitter.svg" alt="Twitter logo">
+                  <img class="w-5 h-5" src="/images/icon-pinterest.svg" alt="Pinterest logo">
+                </div>
+              </div>
+
+              <button class="bg-gray-200 w-8 h-8 rounded-full 
+                    flex items-center justify-center">
+                <img class="w-[0.9375rem] h-[0.8125rem]" src="/images/icon-share.svg" alt="Share icon">
+              </button>
+            </div>
           </div>
         </footer>
       </section>
