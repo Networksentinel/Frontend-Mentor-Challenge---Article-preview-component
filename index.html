@@ -61,17 +61,24 @@
             </div>
           </div>
           <button class="
-                bg-gray-200 w-8 h-8 rounded-full 
-                  flex items-center justify-center">
+                bg-gray-200 w-8 h-8 rounded-full
+                  flex items-center justify-center
+                  hover:cursor-pointer hover:bg-gray-500 group transition-all duration-200">
                   <!-- add classes to button with JS = relative z-10 bg-gray-500-->
-            <svg class="w-[0.9375rem] h-[0.8125rem] text-gray-500" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            <svg class="
+                  w-[0.9375rem] h-[0.8125rem] text-gray-500 
+                 group-hover:text-white transition-all duration-200"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+            </svg>
             <!-- add classes to svg with JS = text-white-->
           </button>
 
           <!-- Tooltip -->
-          <div class="bg-gray-900 h-[4.75rem]
-                      flex justify-center 
-                      absolute inset-x-0 bottom-0 hidden">
+          <div class="
+              bg-gray-900 h-[4.75rem]
+                flex justify-center 
+                absolute inset-x-0 bottom-0 hidden">
             <div class="flex justify-between gap-16">
               <div class="flex items-center justify-between gap-6">
                 <span class="text-preset-3 uppercase text-gray-400">Share</span>
