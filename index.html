@@ -56,45 +56,49 @@
               <time class="text-preset-2 text-gray-400" datetime="2020-06-28">28 Jun 2020</time>
             </div>
           </div>
-          <button class="
-                bg-gray-200 w-8 h-8 rounded-full
-                  flex items-center justify-center
-                  hover:cursor-pointer hover:bg-gray-500 group transition-all duration-200">
-                  <!-- add classes to button with JS = relative z-10 bg-gray-500-->
-            <svg class="
-                  w-[0.9375rem] h-[0.8125rem] text-gray-500 
-                 group-hover:text-white transition-all duration-200"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
-            </svg>
-            <!-- add classes to svg with JS = text-white-->
-          </button>
-
-          <!-- Tooltip -->
-          <div class="
-              bg-gray-900 h-[4.75rem] flex justify-center absolute inset-x-0 bottom-0 rounded-b-[0.625rem]
-                md:w-[15.5rem] md:h-[3.4375rem] md:rounded-[0.625rem]
-                md:left-[clamp(26.6875rem,55.5989583vw,34.375rem)] md:top-[clamp(129px,calc(-8.33vw+249px),185px)]">
-            <div class="flex justify-between gap-16">
-              <div class="flex items-center justify-between gap-6">
-                <span class="text-preset-3 uppercase text-gray-400">Share</span>
-                <div class="flex justify-between gap-4">
-                  <img class="w-5 h-5" src="/images/icon-facebook.svg" alt="Facebook logo">
-                  <img class="w-5 h-5" src="/images/icon-twitter.svg" alt="Twitter logo">
-                  <img class="w-5 h-5" src="/images/icon-pinterest.svg" alt="Pinterest logo">
-                </div>
-              </div>
-              <!-- Spacer to maintain tooltip layout -->
-              <div class="w-8 h-8 md:hidden" aria-hidden="true"></div>
-            </div>
-            <!-- Tooltip triangle -->
-            <div class="absolute w-[24px] h-3 top-[54px]">
-              <svg class="text-gray-900" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 12" width="24" height="12">
-                <path fill="currentColor" id="Background" class="s0" d="m0 0l12 12 12-12z"/>
+          <!-- WRAPPER Button + Tooltip -->
+          <div class="md:relative">
+            <button class="
+                    bg-gray-200 w-8 h-8 rounded-full
+                      flex items-center justify-center
+                      hover:cursor-pointer hover:bg-gray-500 group transition-all duration-200">
+                      <!-- add classes to button with JS = relative z-10 bg-gray-500-->
+              <svg class="
+                      w-[0.9375rem] h-[0.8125rem] text-gray-500 
+                    group-hover:text-white transition-all duration-200"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
               </svg>
+              <!-- add classes to svg with JS = text-white-->
+            </button>
+            
+            <!-- Tooltip -->
+            <div class="
+                bg-gray-900 h-[4.75rem] flex justify-center absolute inset-x-0 bottom-0 rounded-b-[0.625rem]
+                  md:w-[15.5rem] md:h-[3.4375rem] md:rounded-[0.625rem]
+                  md:left-[-6.75rem] md:top-[-5.25rem]">
+              <div class="flex justify-between gap-16">
+                <div class="flex items-center justify-between gap-6">
+                  <span class="text-preset-3 uppercase text-gray-400">Share</span>
+                  <div class="flex justify-between gap-4">
+                    <img class="w-5 h-5" src="/images/icon-facebook.svg" alt="Facebook logo">
+                    <img class="w-5 h-5" src="/images/icon-twitter.svg" alt="Twitter logo">
+                    <img class="w-5 h-5" src="/images/icon-pinterest.svg" alt="Pinterest logo">
+                  </div>
+                </div>
+                <!-- Spacer to maintain tooltip layout -->
+                <div class="w-8 h-8 md:hidden" aria-hidden="true"></div>
+              </div>
+              <!-- Tooltip triangle -->
+              <div class="absolute w-[24px] h-3 top-[54px]">
+                <svg class="text-gray-900" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 12" width="24" height="12">
+                  <path fill="currentColor" id="Background" class="s0" d="m0 0l12 12 12-12z"/>
+                </svg>
+              </div>
             </div>
-          </div>
           <!-- Tooltip END -->
+          </div>
+          <!-- WRAPPER Button + Tooltip END -->
         </footer>
         <!-- Main footer END-->
       </section>
