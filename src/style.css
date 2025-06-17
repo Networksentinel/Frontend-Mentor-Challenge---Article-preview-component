@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --color-gray-900: #48556A;
-  --color-gray-500: #6E8098;
-  --color-gray-400: #9DAEC2;
-  --color-gray-200: #ECF2F8;
-}
-
 .text-preset-1 {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
