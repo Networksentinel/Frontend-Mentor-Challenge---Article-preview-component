@@ -56,19 +56,21 @@
               <time class="text-preset-2 text-gray-400" datetime="2020-06-28">28 Jun 2020</time>
             </div>
           </div>
-          <!-- WRAPPER Button + Tooltip -->
+          <!-- WRAPPER Share-Button + Tooltip -->
           <div class="md:relative">
             <button class="
                     bg-gray-200 w-8 h-8 rounded-full relative z-10
                       flex items-center justify-center
-                      hover:cursor-pointer hover:bg-gray-500 group transition-all duration-200">
-                      <!-- add classe to button with JS on click = bg-gray-500-->
+                      hover:cursor-pointer hover:bg-gray-500 group transition-all duration-200"
+                      id="share-button">
+                      <!-- add class to button with JS on click = bg-gray-500-->
               <svg class="
                       w-[0.9375rem] h-[0.8125rem] text-gray-500 
                     group-hover:text-white transition-all duration-200"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
-              </svg> <!-- add classes to svg with JS on click = text-white-->
+                      <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                      id="share-icon"/>
+              </svg> <!-- add class to svg with JS on click = text-white-->
 
             </button>
             
@@ -76,7 +78,8 @@
             <div class="
                 bg-gray-900 h-[4.75rem] flex justify-center absolute inset-x-0 bottom-0 rounded-b-[0.625rem]
                   md:w-[15.5rem] md:h-[3.4375rem] md:rounded-[0.625rem]
-                  md:left-[-6.75rem] md:top-[-5.25rem] hidden">
+                  md:left-[-6.75rem] md:top-[-5.25rem] hidden"
+                  id="tooltip">
                   <!-- Remove class from Tooltip with JS on click = hidden -->
               <div class="flex justify-between gap-16">
                 <div class="flex items-center justify-between gap-6">
