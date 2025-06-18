@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Another Frontend Mentor challenge - this time I am going to create an Article preview component, using Tailwind CSS and vanilla JavaScript for the first time.">
+    <meta name="author" content="Michael, The Network Sentinel.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/Frontend-Mentor-Challenge---Article-preview-component/images/favicon-32x32.png">
+    <title>Frontend Mentor | Article preview component</title>
+    <script type="module" crossorigin src="/Frontend-Mentor-Challenge---Article-preview-component/assets/index-BQ3nrXwl.js"></script>
+    <link rel="stylesheet" crossorigin href="/Frontend-Mentor-Challenge---Article-preview-component/assets/index-CrKUYd19.css">
+  </head>
+
+  <body class="bg-gray-200 text-preset-3 flex flex-col items-center justify-center">
+
+    <main class="flex flex-col items-center justify-center min-h-screen">
+      <!-- Main wrapper -->
+      <div class="
+            bg-white relative max-w-[20.4375rem] max-h-[33.625rem] rounded-[0.625rem] drop-shadow-[0_40px_40px_#C9D5E1]
+            flex flex-col items-center
+            md:flex-row md:max-h-none md:h-[clamp(17.5rem,calc(-9.82vw+26.3375rem),21.625rem)] md:max-w-none md:w-[clamp(38rem,79.1666vw,45.625rem)]">
+        <!-- Main image -->
+        <img class="
+              max-h-[12.5rem] w-full object-cover rounded-t-[0.625rem]
+              md:rounded-l-[0.625rem] md:rounded-tr-none
+              md:max-h-none md:h-full md:w-[clamp(14.3125rem,29.81770vw,17.8125rem)]" 
+              src="/Frontend-Mentor-Challenge---Article-preview-component/images/drawers.jpg" alt="Vase with wheat, two picture frames on a green table">
+        <!-- Main section -->
+        <section class="
+                  px-[1.875rem] pt-8 pb-[1.125rem]
+                  flex flex-col items-center justify-between gap-12
+                  md:pr-[clamp(2.25rem,4.6875vw,2.5rem)] md:pl-[clamp(2rem,4.16666vw,2.5rem)] md:py-[clamp(30px,calc(-1.64vw+53.6px),41px)]
+                  md:gap-6">
+          <!-- paragraph wrapper -->
+          <div class="flex flex-col items-center justify-between gap-6">
+            <p class="text-preset-1 text-gray-900">
+              Shift the overall look and feel by adding these wonderful 
+              touches to furniture in your home
+            </p>
+            <p class="text-preset-2 text-gray-500">
+              Ever been in a room and felt like something was missing? Perhaps 
+              it felt slightly bare and uninviting. I’ve got some simple tips 
+              to help you make any room feel complete.
+            </p>
+          </div>
+
+          <!-- Main footer -->
+          <footer class="w-full flex items-center justify-between gap-[clamp(3.625rem,18.125vw,4rem)]">
+            <div class="flex items-center justify-between gap-4">
+              <img class="w-10 h-10 rounded-full" src="/Frontend-Mentor-Challenge---Article-preview-component/images/avatar-michelle.jpg" alt="profile picture of Michelle Appleton">
+              <div class="flex flex-col">
+                <h2 class="text-preset-2Bold text-gray-900">Michelle Appleton</h2>
+                <time class="text-preset-2 text-gray-400" datetime="2020-06-28">28 Jun 2020</time>
+              </div>
+            </div>
+            <!-- [Share Button + Tooltip] WRAPPER  -->
+            <div class="md:relative">
+              <button class="
+                      bg-gray-200 w-8 h-8 rounded-full relative z-10
+                        flex items-center justify-center
+                        hover:cursor-pointer hover:bg-gray-500 group transition-all duration-200"
+                        id="share-button">
+                <svg class="
+                      w-[0.9375rem] h-[0.8125rem] text-gray-500 
+                    group-hover:text-white transition-all duration-200"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                      id="share-icon"/>
+                </svg>
+
+              </button>
+              
+              <!-- Tooltip -->
+              <div class="
+                  bg-gray-900 h-[4.75rem] flex justify-center absolute inset-x-0 bottom-0 rounded-b-[0.625rem] drop-shadow-[0_10px_10px_#C9D5E1]
+                    invisible transition-all ease-in-out duration-200 opacity-0
+                    md:w-[15.5rem] md:h-[3.4375rem] md:rounded-[0.625rem] md:left-[-6.75rem] md:top-[-5.25rem]"
+                    id="tooltip">
+                <div class="flex justify-between gap-16">
+                  <div class="flex items-center justify-between gap-6">
+                    <!-- "SHARE" text -->
+                    <a href="#">
+                      <span class="text-preset-3 uppercase text-gray-400 transition-all duration-150 hover:text-gray-200">Share</span>
+                    </a>
+                    <!-- ICON wrapper-->
+                    <div class="flex justify-between gap-4">
+                      <!-- Facebook ICON -->
+                      <a href="#"> 
+                        <svg class="w-5 h-5 text-white transition-all duration-150 hover:text-gray-400"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="currentColor" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/>
+                        </svg>
+                      </a>
+                      <!-- Twitter ICON-->
+                      <a href="#" class="relative">
+                        <svg class="w-5 h-5 relative top-0.5 text-white transition-all duration-150 hover:text-gray-400"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="currentColor" d="M20 2.172a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.605.996A4.096 4.096 0 0013.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 011.392 1a4.109 4.109 0 001.27 5.478 4.086 4.086 0 01-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.833 2.849A8.25 8.25 0 010 14.658a11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.663-12.205A8.354 8.354 0 0020 2.172z"/>
+                        </svg>
+                      </a>
+                      <!-- Pinterest ICON-->
+                      <a href="#">
+                        <svg class="w-5 h-5 text-white transition-all duration-150 hover:text-gray-400"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="currentColor" d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <!-- ICON wrapper END-->
+                  </div>
+                  <!-- Spacer to maintain tooltip layout -->
+                  <div class="w-8 h-8 md:hidden" aria-hidden="true"></div>
+                </div>
+                <!-- Tooltip triangle -->
+                <div class="md:absolute md:w-[24px] md:h-3 md:top-[54px] md:drop-shadow-[0_10px_10px_#C9D5E1]">
+                  <svg class="text-gray-900" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 12" width="24" height="12">
+                    <path fill="currentColor" id="Background" class="s0" d="m0 0l12 12 12-12z"/>
+                  </svg>
+                </div>
+              </div>
+              <!-- Tooltip END -->
+            </div>
+            <!-- [Share Button + Tooltip] WRAPPER END -->
+          </footer>
+          <!-- Main footer END-->
+        </section>
+        <!-- Main section END -->
+      </div>
+      <!-- Main wrapper END -->
+    </main>
+
+    <footer class="flex flex-wrap justify-center gap-1 mx-3 my-3">
+      <span>
+        Challenge by <a class="text-[#c13464] transition-all duration-200 hover:underline hover:text-[#f50b5b]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      </span> 
+      <span>
+        Coded by <a class="text-[#c13464] transition-all duration-200 hover:underline hover:text-[#f50b5b]" href="#">Michael, TNS.</a>
+      </span>
+    </footer>
+
+  </body>
+</html>
