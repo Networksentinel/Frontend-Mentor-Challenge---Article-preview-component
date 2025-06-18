@@ -36,4 +36,16 @@ tooltipLinks.forEach(link => {
     hideTooltip();
     shareButton.classList.toggle('bg-gray-500');
     shareIcon.classList.toggle('text-white');
-  })});
+  });
+});
+
+// Event listener for clicks outside the tooltip - hides the tooltip if clicked outside
+window.addEventListener('click', (e) => {
+  if (tooltip.classList.contains('visible') &&
+    !tooltip.contains(e.target) &&
+    !shareButton.contains(e.target)) {
+    hideTooltip();
+    shareButton.classList.remove('bg-gray-500');
+    shareIcon.classList.remove('text-white');
+  }
+});
