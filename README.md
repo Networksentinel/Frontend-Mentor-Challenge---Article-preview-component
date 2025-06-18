@@ -29,15 +29,15 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+- [Live Site](https://networksentinel.github.io/Frontend-Mentor-Challenge---Article-preview-component/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- Tailwind
+- Tailwind CSS
 - Vanilla JavaScript
 - Flexbox
 - Mobile-first workflow
